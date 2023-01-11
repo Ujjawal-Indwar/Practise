@@ -1,0 +1,35 @@
+img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    /*Space between photo and text*/
+}
+video{
+    float: left;
+    width: 500px;
+    height: auto;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+span{
+background-color:blue
+}
+#yourphoto {
+    border-radius: 100px;
+    /*half of width makes the photo round*/
+}
+
+#coffee {
+    /*Conceptually their is a box around every element in html*/
+    object-fit: cover;
+}
+
+.username {
+    color: yellow;
+}
+
+ul {
+    list-style: none;
+}
