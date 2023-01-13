@@ -1,3 +1,6 @@
+body{
+    margin: 10px;
+}
 img {
     float: left;
     width: 200px;
@@ -32,4 +35,23 @@ background-color:blue
 
 ul {
     list-style: none;
+}
+a[href^="https"][href$=".com"]{
+    color: yellowgreen;
+}
+
+article p:last-of-type{
+    font-style: italic;
+}
+ul li:nth-child(odd){
+    color: green
+}
+
+a:visited,
+a:link{
+    color:brown;
+}
+
+a:hover, a:focus{
+    color:red;
 }
