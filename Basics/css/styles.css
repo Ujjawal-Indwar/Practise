@@ -39,7 +39,7 @@ ul {
 a[href^="https"][href$=".com"]{
     color: yellowgreen;
 }
-
+/*Pseudo Class--To style element in a particular state*/
 article p:last-of-type{
     font-style: italic;
 }
@@ -55,3 +55,31 @@ a:link{
 a:hover, a:focus{
     color:red;
 }
+/*Pseudo Element--To Style part of  an element*/
+p::first-letter{
+    font-size: 140%;
+    font-weight: bold;
+}
+
+p::selection{
+    background-color:pink;
+}
+
+p::after{
+    content: "... ";
+    
+}
+/*CSS gradient.io*/
+.article1{
+    width: 500px;
+    height: 500px;
+    text-shadow:3px 3px 5px purple ;
+    background-image: linear-gradient(10deg, red, yellow 60%, lightblue 10%);
+}
+.article2{
+    width: 500px;
+    height: 500px;
+    background-image: radial-gradient( pink,yellow);
+    box-shadow: 0 0 30px blue;
+}
+/*CSS Tricks -- shapes diff*/
