@@ -83,3 +83,13 @@ p::after{
     box-shadow: 0 0 30px blue;
 }
 /*CSS Tricks -- shapes diff*/
+
+
+/*Box Model ---MBPContent*/
+article{
+    margin:2px;
+    padding:5px;
+    border: 2px solid #ccc;
+    
+
+}
