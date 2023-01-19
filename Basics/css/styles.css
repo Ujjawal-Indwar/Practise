@@ -103,6 +103,7 @@ article{
 }
 
 /*Flexbox
+Axes-main(primary),cross(secondary)
 default-row
 Row-x(main), y(cross)
 Column-y(main),x(cross)
@@ -110,7 +111,12 @@ Column-y(main),x(cross)
 Aligning items
 justify-content:(along the main axis)
 align-items:(along the cross axis)
-align-content:
+align-content: Works only when we have multiple lines in the flex container
+
+flex
+flex-basis
+flex-grow
+flex-shrink
 */
 
 .article{
@@ -133,4 +139,71 @@ The viewport is the user's visible area of a web page.
 The viewport varies with the device,
  and will be smaller on a mobile phone than on a computer screen
 
+*/
+
+/*
+Grid
+content-Entire content or the grid
+items-individual items of the grid
+justify-items:-along the horizontal axis
+align-items:-along the verticle axis
+
+fr---fraction % of space  left
+*/
+
+/*Float
+By default Parent element don't see Floated element
+----clear is used after Float element to make it recoganize
+*/
+
+.twitter{
+    border: 2px solid black;
+    margin: 10rem;
+}
+
+/*Float
+.clearFix::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+*/
+.FloatBox{
+    width: 5rem;
+    height: 5rem;
+    background-color:goldenrod;
+    float: left;
+    margin:0 0.5rem;
+}
+
+.clear{
+    margin-left: 0.5rem;
+    clear: both;
+}
+
+.boxes{
+    border: 3px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 90vh;
+    
+}
+.box{
+    flex-basis: 10;
+    flex: 10rem;
+    width:5rem;
+    height:5rem;
+    background-color: aqua;
+    margin:1rem;
+    
+}
+/*Sizing Items
+flex-basis(initial size of the flex item)
+flex-grow(the growth factor)
+flex-shrink(the shrink factor)
+flex-combines the above three
 */
