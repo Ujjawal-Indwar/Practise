@@ -1,7 +1,7 @@
 body{
     margin: 10px;
 }
-img {
+#yourphoto,#coffee {
     float: left;
     width: 200px;
     height: 200px;
@@ -141,15 +141,6 @@ The viewport varies with the device,
 
 */
 
-/*
-Grid
-content-Entire content or the grid
-items-individual items of the grid
-justify-items:-along the horizontal axis
-align-items:-along the verticle axis
-
-fr---fraction % of space  left
-*/
 
 /*Float
 By default Parent element don't see Floated element
@@ -193,8 +184,8 @@ By default Parent element don't see Floated element
     
 }
 .box{
-    flex-basis: 10;
-    flex: 10rem;
+    flex-shrink:5 ;
+    flex: 6rem;
     width:5rem;
     height:5rem;
     background-color: aqua;
@@ -207,3 +198,26 @@ flex-grow(the growth factor)
 flex-shrink(the shrink factor)
 flex-combines the above three
 */
+
+/*Flexbox===To layout in elements in a row or column
+Grid===To layout elements in both row and column*/
+
+/*Defining a Grid*/
+
+/*
+Grid
+content-Entire content or the grid
+items-individual items of the grid
+justify-items:-along the horizontal axis
+align-items:-along the verticle axis
+ grid-template: repeat(4,500px)/repeat(3,500px);
+fr---fraction % of space  left
+*/
+.container{
+    display: grid;
+    /*4*3*/
+    grid-template: repeat(4,500px)/repeat(3,500px);
+    border: 5px dotted black;
+    justify-items: stretch;
+    align-items: stretch;
+}
