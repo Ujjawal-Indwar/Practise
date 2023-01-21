@@ -216,8 +216,20 @@ fr---fraction % of space  left
 .container{
     display: grid;
     /*4*3*/
-    grid-template: repeat(4,500px)/repeat(3,500px);
+    grid-template: repeat(4,100px)/ 30fr 35fr 35fr;
     border: 5px dotted black;
-    justify-items: stretch;
-    align-items: stretch;
+    gap: .5rem;
+}
+.Grid_Box{
+    
+    height:5rem;
+    background-color:greenyellow;
+}
+.mediaBox{
+
+}
+.mBox{
+    width: 10rem;
+    height: 10rem;
+    background-color:blueviolet;
 }
