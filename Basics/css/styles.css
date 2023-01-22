@@ -224,12 +224,40 @@ fr---fraction % of space  left
     
     height:5rem;
     background-color:greenyellow;
+    
 }
 .mediaBox{
-
+display: flex;
+flex-direction: column;
 }
+
 .mBox{
-    width: 10rem;
-    height: 10rem;
+    padding:1rem;
     background-color:blueviolet;
+}
+.mBox:nth-of-type(2){
+    background-color:blue;
+}
+
+@media screen and (min-width: 600px) {
+
+    .mediaBox{
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 900px) {
+
+    .mBox{
+        background-color:rgb(43, 226, 92);
+    }
+    .mBox:nth-of-type(2){
+        background-color:royalblue;
+    }
+}
+/*For printing the web page in a reabale format 12pt*/
+@media print {
+
+    body{
+        font-size:12pt;
+    }
 }
