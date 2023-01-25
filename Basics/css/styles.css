@@ -5,6 +5,7 @@
          url('fonts/opensans-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: optional ;
 
 }
 
