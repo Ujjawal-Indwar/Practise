@@ -23,6 +23,7 @@
 body{
     margin: 10px;
     font-family: 'open_sansregular',Arial, Helvetica, sans-serif;
+    background-color: brown;
 }
 #yourphoto,#coffee {
     float: left;
