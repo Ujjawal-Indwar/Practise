@@ -285,3 +285,28 @@ flex-direction: column;
         font-size:12pt;
     }
 }
+.fonting {
+     font-family: "Open Sans", arial;
+    font-size: 1rem;
+    line-height: 1.01;
+    text-align: center;
+}
+.nike{
+    font-family: Roboto,arial;
+    margin: 3rem 0 1rem;
+}
+/*.fonting-para{
+    width: 50ch;
+}
+text-indent : change paragraph visually good
+overflow:hidden
+text-overflow:ellipsis
+*/
+
+.text-formatting{
+    columns: 2;
+    column-gap: 2rem;
+    column-rule: 3px dotted #999;
+    margin: 2rem;
+    
+}
