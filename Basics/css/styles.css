@@ -1,113 +1,106 @@
+@font-face {
+  font-family: "open_sansbold";
+  src: url("fonts/opensans-bold-webfont.woff2") format("woff2"),
+    url("fonts/opensans-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: optional;
+}
 
 @font-face {
-    font-family: 'open_sansbold';
-    src: url('fonts/opensans-bold-webfont.woff2') format('woff2'),
-         url('fonts/opensans-bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: optional ;
-
+  font-family: "open_sansregular";
+  src: url("fonts/opensans-regular-webfont.woff2") format("woff2"),
+    url("fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 10px;
+  font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+  background-color: brown;
+}
+#yourphoto,
+#coffee {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  /*Space between photo and text*/
+}
+video {
+  float: left;
+  width: 500px;
+  height: auto;
+  margin-right: 20px;
+  object-fit: cover;
 }
 
-
-
-
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('fonts/opensans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-body{
-    margin: 10px;
-    font-family: 'open_sansregular',Arial, Helvetica, sans-serif;
-    background-color: brown;
-}
-#yourphoto,#coffee {
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
-    /*Space between photo and text*/
-}
-video{
-    float: left;
-    width: 500px;
-    height: auto;
-    margin-right: 20px;
-    object-fit: cover;
-}
-
-span{
-background-color:blue
+span {
+  background-color: blue;
 }
 #yourphoto {
-    border-radius: 100px;
-    /*half of width makes the photo round*/
+  border-radius: 100px;
+  /*half of width makes the photo round*/
 }
 
 #coffee {
-    /*Conceptually their is a box around every element in html*/
-    object-fit: cover;
+  /*Conceptually their is a box around every element in html*/
+  object-fit: cover;
 }
 
 .username {
-    color: yellow;
+  color: yellow;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
-a[href^="https"][href$=".com"]{
-    color: yellowgreen;
+a[href^="https"][href$=".com"] {
+  color: yellowgreen;
 }
 /*Pseudo Class--To style element in a particular state*/
-article p:last-of-type{
-    font-style: italic;
+article p:last-of-type {
+  font-style: italic;
 }
-ul li:nth-child(odd){
-    color: green
+ul li:nth-child(odd) {
+  color: green;
 }
 
 a:visited,
-a:link{
-    color:brown;
+a:link {
+  color: brown;
 }
 
-a:hover, a:focus{
-    color:red;
+a:hover,
+a:focus {
+  color: red;
 }
 /*Pseudo Element--To Style part of  an element*/
-p::first-letter{
-    font-size: 140%;
-    font-weight: bold;
+p::first-letter {
+  font-size: 140%;
+  font-weight: bold;
 }
 
-p::selection{
-    background-color:pink;
+p::selection {
+  background-color: pink;
 }
 
-p::after{
-    content: "... ";
-    
+p::after {
+  content: "... ";
 }
 /*CSS gradient.io*/
-.article1{
-    
-    text-shadow:3px 3px 5px purple ;
-    background-image: linear-gradient(10deg, red, yellow 60%, lightblue 10%);
+.article1 {
+  text-shadow: 3px 3px 5px purple;
+  background-image: linear-gradient(10deg, red, yellow 60%, lightblue 10%);
 }
-.article2{
-    /*position: absolute;
+.article2 {
+  /*position: absolute;
     top: 20px;
     right: 2px;*/
-    
-    height: auto;
-    background-image: radial-gradient( pink,yellow);
-    box-shadow: 0 0 30px blue;
-    
+
+  height: auto;
+  background-image: radial-gradient(pink, yellow);
+  box-shadow: 0 0 30px blue;
 }
 
 /*Positioning
@@ -117,13 +110,11 @@ Fixed-Relative to vieport
 */
 /*CSS Tricks -- shapes diff*/
 
-
 /*Box Model ---MBPContent*/
 
-article{
-    width: 47%;
-    height: auto;
-    
+article {
+  width: 47%;
+  height: auto;
 }
 
 /*Flexbox
@@ -143,15 +134,14 @@ flex-grow
 flex-shrink
 */
 
-.article{
-    margin:2px;
-    padding:5px;
-    display: flex;
-    justify-content:space-evenly;
-    /*position: relative;
+.article {
+  margin: 2px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  /*position: relative;
        border: 2px solid #ccc;
     */
-
 }
 /*Measurement units
 %--------relative to the size of the container
@@ -165,15 +155,14 @@ The viewport varies with the device,
 
 */
 
-
 /*Float
 By default Parent element don't see Floated element
 ----clear is used after Float element to make it recoganize
 */
 
-.twitter{
-    border: 2px solid black;
-    margin: 10rem;
+.twitter {
+  border: 2px solid black;
+  margin: 10rem;
 }
 
 /*Float
@@ -183,38 +172,36 @@ By default Parent element don't see Floated element
     clear:both;
 }
 */
-.FloatBox{
-    width: 5rem;
-    height: 5rem;
-    background-color:goldenrod;
-    float: left;
-    margin:0 0.5rem;
+.FloatBox {
+  width: 5rem;
+  height: 5rem;
+  background-color: goldenrod;
+  float: left;
+  margin: 0 0.5rem;
 }
 
-.clear{
-    margin-left: 0.5rem;
-    clear: both;
+.clear {
+  margin-left: 0.5rem;
+  clear: both;
 }
 
-.boxes{
-    border: 3px solid gray;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    height: 90vh;
-    
+.boxes {
+  border: 3px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 90vh;
 }
-.box{
-    flex-shrink:5 ;
-    flex: 6rem;
-    width:5rem;
-    height:5rem;
-    background-color: aqua;
-    margin:1rem;
-    
+.box {
+  flex-shrink: 5;
+  flex: 6rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: aqua;
+  margin: 1rem;
 }
 /*Sizing Items
 flex-basis(initial size of the flex item)
@@ -237,63 +224,59 @@ align-items:-along the verticle axis
  grid-template: repeat(4,500px)/repeat(3,500px);
 fr---fraction % of space  left
 */
-.container{
-    display: grid;
-    /*4*3*/
-    grid-template: repeat(4,100px)/ 30fr 35fr 35fr;
-    border: 5px dotted black;
-    gap: .5rem;
+.container {
+  display: grid;
+  /*4*3*/
+  grid-template: repeat(4, 100px) / 30fr 35fr 35fr;
+  border: 5px dotted black;
+  gap: 0.5rem;
 }
-.Grid_Box{
-    
-    height:5rem;
-    background-color:greenyellow;
-    
+.Grid_Box {
+  height: 5rem;
+  background-color: greenyellow;
 }
-.mediaBox{
-display: flex;
-flex-direction: column;
+.mediaBox {
+  display: flex;
+  flex-direction: column;
 }
 
-.mBox{
-    padding:1rem;
-    background-color:blueviolet;
+.mBox {
+  padding: 1rem;
+  background-color: blueviolet;
 }
-.mBox:nth-of-type(2){
-    background-color:blue;
+.mBox:nth-of-type(2) {
+  background-color: blue;
 }
 
 @media screen and (min-width: 600px) {
-
-    .mediaBox{
-        flex-direction: row;
-    }
+  .mediaBox {
+    flex-direction: row;
+  }
 }
 @media screen and (min-width: 900px) {
-
-    .mBox{
-        background-color:rgb(43, 226, 92);
-    }
-    .mBox:nth-of-type(2){
-        background-color:royalblue;
-    }
+  .mBox {
+    background-color: rgb(43, 226, 92);
+  }
+  .mBox:nth-of-type(2) {
+    background-color: royalblue;
+  }
 }
 /*For printing the web page in a reabale format 12pt*/
 @media print {
-
-    body{
-        font-size:12pt;
-    }
+  body {
+    font-size: 12pt;
+    background-color: aquamarine;
+  }
 }
 .fonting {
-     font-family: "Open Sans", arial;
-    font-size: 1rem;
-    line-height: 1.01;
-    text-align: center;
+  font-family: "Open Sans", arial;
+  font-size: 1rem;
+  line-height: 1.01;
+  text-align: center;
 }
-.nike{
-    font-family: Roboto,arial;
-    margin: 3rem 0 1rem;
+.nike {
+  font-family: Roboto, arial;
+  margin: 3rem 0 1rem;
 }
 /*.fonting-para{
     width: 50ch;
@@ -303,10 +286,9 @@ overflow:hidden
 text-overflow:ellipsis
 */
 
-.text-formatting{
-    columns: 2;
-    column-gap: 2rem;
-    column-rule: 3px dotted #999;
-    margin: 2rem;
-    
+.text-formatting {
+  columns: 2;
+  column-gap: 2rem;
+  column-rule: 3px dotted #999;
+  margin: 2rem;
 }
